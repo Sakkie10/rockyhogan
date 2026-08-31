@@ -21,3 +21,12 @@ if (menuToggle && navLinks) {
     });
   });
 }
+
+const desktop = window.matchMedia("(min-width: 801px)").matches;
+
+if (desktop) {
+  document.querySelectorAll(".js-external").forEach(function (link) {
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  });
+}
