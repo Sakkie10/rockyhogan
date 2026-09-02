@@ -193,6 +193,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  align-items: stretch;
 }
 
 .project {
@@ -201,6 +202,8 @@ h2 {
   border-radius: 14px;
   overflow: hidden;
   transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project:hover {
@@ -216,6 +219,7 @@ h2 {
   justify-content: center;
   background: #181c22;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .project-image img {
@@ -240,6 +244,9 @@ h2 {
 
 .project-content {
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project h3 {
@@ -272,6 +279,7 @@ h2 {
   color: #8b9cff;
   font-weight: 600;
   font-size: 0.9rem;
+  margin-top: auto;
 }
 
 /* ---------------- ABOUT ---------------- */
